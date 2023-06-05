@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mradking.mradkingshop">
+
+
+
+   <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_icon"
+        android:supportsRtl="false"
+        tools:replace="android:supportsRtl"
+        android:largeHeap="true"
+        android:usesCleartextTraffic="true"
+
+
+        android:requestLegacyExternalStorage="true"
+        android:hardwareAccelerated="true"
+        tools:ignore="GoogleAppIndexingWarning"
+        android:theme="@style/AppTheme.NoActionBar" >
+
+
+
+    <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name=".kirana_store.custmer.activity.Splash"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <service
+            android:name=".kirana_store.custmer.notification.MyFireabaseMessingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/app_icon" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimaryDark" />
+
+        <activity
+            android:name=".kirana_store.Admin_panel.activity.admin.admin_dasboard"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+        <activity
+            android:name=".kirana_store.custmer.activity.check_out_payment"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".kirana_store.custmer.activity.check_out_address"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".kirana_store.custmer.activity.kirana_home_main_act"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".kirana_store.custmer.activity.product_list"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+      />
+
+
+        <activity
+            android:name=".kirana_store.custmer.activity.Cart_list"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+
+        <activity
+            android:name=".kirana_store.franchige.activity.Sub_cribe_act_2"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+
+        <activity
+            android:name=".kirana_store.franchige.activity.Data_setup_for_stage_2"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+        <activity
+            android:name=".kirana_store.franchige.activity.Frenchige_dasboard"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+
+        <activity
+            android:name=".kirana_store.franchige.activity.Renew_account_act"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+
+        <activity
+            android:name=".kirana_store.franchige.activity.test"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+
+
+        <activity
+            android:name=".kirana_store.custmer.activity.Refer_code_act"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+
+        <activity
+            android:name=".kirana_store.franchige.activity.investment_form"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+        <activity
+            android:name=".kirana_store.franchige.activity.Plan_choess_act"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+
+        <activity
+            android:name=".kirana_store.shopkeer.form.Add_product_request"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".kirana_store.shopkeer.list.Added_product_list"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".kirana_store.shopkeer.activity.Shop_stock_main"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".kirana_store.shopkeer.activity.Shop_instock_main"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".kirana_store.shopkeer.activity.Shop_near_out_stock_main"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+
+        <activity
+            android:name=".kirana_store.Admin_panel.activity.shop.Shop_more_dasboard"
+            android:label="Delivered List"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+
+        <activity
+            android:name=".kirana_store.Admin_panel.activity.shop.Shop_withdraw_request_main"
+            android:label="Delivered List"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".kirana_store.Admin_panel.activity.shop.Shop_withdraw_transfer_act"
+            android:label="Delivered List"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".kirana_store.Admin_panel.activity.shop.Shop_spport_request_main"
+            android:label="Delivered List"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".kirana_store.Admin_panel.lists.other_list.user_list"
+            android:label="Delivered List"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+
+        <activity
+            android:name=".kirana_store.Admin_panel.activity.shop.Shop_support_request_soloved_main"
+            android:label="Delivered List"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+
+        <activity
+            android:name=".kirana_store.Admin_panel.activity.shop.Shop_accepted_produdct_request_main"
+            android:label="Delivered List"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".kirana_store.Admin_panel.activity.shop.Shop_requested_product_main"
+            android:label="Delivered List"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".kirana_store.Admin_panel.lists.shop_list.shop_transfer_list"
+            android:label="Delivered List"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".kirana_store.shopkeer.activity.Withraw_Main_act"
+            android:label="Delivered List"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+
+        <activity
+            android:name=".kirana_store.shopkeer.list.Withdraw_request_list"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".kirana_store.shopkeer.list.Withdraw_transfer_list"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".kirana_store.shopkeer.activity.withdrawing_request_making_act"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".kirana_store.custmer.activity.Thanks_place_order"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+        <activity
+            android:name=".kirana_store.custmer.activity.Order_Item_list"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".kirana_store.shopkeer.activity.Order_Main_list"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".kirana_store.custmer.activity.Order_list_main_class"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+
+        <activity
+            android:name=".kirana_store.custmer.activity.Kiranan_shopes_list"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".kirana_store.shopkeer.activity.Add_product_with_list"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".kirana_store.shopkeer.activity.Order_item_list_shop"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".kirana_store.shopkeer.activity.Add_prodcut_category"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".kirana_store.shopkeer.activity.shop_dassboard_main"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".kirana_store.Admin_panel.activity.Product_List_Build_From"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".kirana_store.kirana_address_search_map"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+        <activity
+            android:name=".kirana_store.shopkeer.activity.Get_Location"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".kirana_store.custmer.activity.Near_Place_location_Map"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".kirana_store.custmer.activity.More_product_Bt_list_main"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".kirana_store.custmer.activity.Mothly_List"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+
+        <activity
+            android:name=".kirana_store.custmer.activity.Monthly_order_list"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".kirana_store.shopkeer.activity.Shop_Details_Form"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+
+
+        <activity
+            android:name=".kirana_store.shopkeer.activity.Opt_login"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".kirana_store.get_location"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".kirana_store.franchige.activity.team_list_act"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".kirana_store.franchige.activity.withdraw_investment_main"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".kirana_store.franchige.activity.account"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".kirana_store.franchige.activity.Data_setup_for_stage_1"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".kirana_store.custmer.activity.Otp_loging_act"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+
+        <activity
+            android:name=".kirana_store.dilivery.activity.dilivery_loging"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".kirana_store.dilivery.activity.dilivery_dasboard"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".kirana_store.dilivery.activity.Order_list_act"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".kirana_store.dilivery.activity.Pickup_list_act"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".kirana_store.dilivery.activity.Get_drection_map"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".kirana_store.dilivery.list.pickup_list"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+    </application>
+
+</manifest>

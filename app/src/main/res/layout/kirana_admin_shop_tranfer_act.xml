@@ -1,0 +1,425 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    >
+
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:orientation="vertical">
+
+
+
+                    <androidx.appcompat.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="#fff"
+                        app:title="ShopingZin"
+                        />
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:paddingBottom="80dp"
+                        app:cardCornerRadius="5dp"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ADD MORE ITEMS"
+                            android:gravity="center_horizontal"
+                            android:padding="5dp"
+                            android:id="@+id/add_more_items"
+                            android:textColor="@color/light_green_600"
+
+
+                            ></TextView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="20dp"
+                                android:text="PAYOUT DETAILS"
+                                android:textColor="@color/grey_90"
+
+                                ></TextView>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:padding="@dimen/spacing_middle">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="20dp"
+                                    android:text="Order Amount : "
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                                    android:textColor="@color/grey_90" />
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:text="₹ 0"
+                                    android:id="@+id/total_amout_payment_slip"
+                                    android:textColor="@color/grey_40" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1.20dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="10dp"
+
+                                android:background="#aaa"></View>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:padding="@dimen/spacing_middle">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="20dp"
+                                    android:text="Commission : "
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                                    android:textColor="@color/grey_90" />
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:id="@+id/delivery_fee_payment_slip"
+
+                                    android:text="Free"
+                                    android:textColor="@color/grey_40" />
+
+                            </LinearLayout>
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1.20dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="10dp"
+
+                                android:background="#aaa"></View>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:padding="@dimen/spacing_middle">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="20dp"
+                                    android:text="Tax(Gst) "
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                                    android:textColor="@color/grey_90"
+
+                                    android:textStyle="bold" />
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:text="₹ 250"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                    android:textColor="@color/grey_40"
+                                    android:id="@+id/net_payment_amount_payment_slip"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+
+                                android:visibility="visible"
+                                android:id="@+id/advance_amount_layout"
+
+                                >
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:padding="@dimen/spacing_middle">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="20dp"
+                                        android:text="Delivery Charge : "
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                                        android:textColor="@color/grey_90" />
+
+                                    <View
+                                        android:layout_width="0dp"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="20dp"
+                                        android:text="Free"
+                                        android:id="@+id/adavance_amount"
+                                        android:textColor="@color/grey_40" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1.20dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="#aaa"></View>
+
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:visibility="visible"
+                                    android:id="@+id/remaing_amt_layout"
+                                    android:padding="@dimen/spacing_middle">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="20dp"
+                                        android:text="Your Payout : "
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                        android:textStyle="bold"
+                                        android:textColor="#000" />
+
+                                    <View
+                                        android:layout_width="0dp"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="20dp"
+                                        android:text="Free"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+
+                                        android:textStyle="bold"
+                                        android:id="@+id/remain_amount"
+                                        android:textColor="#000" />
+
+                                </LinearLayout>
+
+
+                                <com.balysv.materialripple.MaterialRippleLayout
+                                    android:id="@+id/conform_bt"
+                                    style="@style/RippleStyleWhite"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="?attr/actionBarSize"
+                                    android:layout_alignParentBottom="true"
+                                    android:background="@color/colorAccent"
+                                    android:clickable="true"
+                                    android:layout_marginTop="25dp"
+                                    android:visibility="visible">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="Amount Transfer"
+                                        android:id="@+id/bt_txt"
+                                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                                        android:textColor="@android:color/white" />
+                                </com.balysv.materialripple.MaterialRippleLayout>
+
+
+                            </LinearLayout>
+
+
+
+
+
+
+
+                        </LinearLayout>
+
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"></View>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:paddingBottom="80dp"
+                        app:cardCornerRadius="5dp"
+                        >
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center_horizontal"
+                            >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Upload Payment ScreenShort"
+                                android:textColor="#000"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:padding="10dp"
+                                android:id="@+id/screenshort_txt"
+                                ></TextView>
+
+                            <ProgressBar
+                                android:layout_width="250dp"
+                                android:layout_height="250dp"
+                                android:visibility="gone"
+                                android:id="@+id/progres_bar_screenshort"
+                                ></ProgressBar>
+
+
+                            <ImageView
+                                android:id="@+id/sceenshort_image"
+                                android:layout_width="250dp"
+                                android:layout_height="300dp"
+                                android:layout_marginTop="18dp"
+                                android:src="@drawable/screenshort_icon"></ImageView>
+
+                            <com.balysv.materialripple.MaterialRippleLayout
+                                style="@style/RippleStyleWhite"
+                                android:layout_width="match_parent"
+                                android:layout_height="?attr/actionBarSize"
+                                android:layout_alignParentBottom="true"
+                                android:background="@color/colorAccent"
+                                android:clickable="true"
+                                android:id="@+id/compelte_bt"
+                                android:layout_marginTop="25dp"
+                                android:visibility="visible">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="Done"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                                    android:textColor="@android:color/white" />
+                            </com.balysv.materialripple.MaterialRippleLayout>
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"></View>
+
+                        </LinearLayout>
+
+
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/cart_list"
+                        ></androidx.recyclerview.widget.RecyclerView>
+
+
+                </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+            </RelativeLayout>
+
+
+
+

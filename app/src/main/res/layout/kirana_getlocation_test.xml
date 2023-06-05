@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mradking_shop.MainActivity" >
+
+  <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/map"
+      tools:context=".MapsActivity"
+      android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="match_parent"
+      android:orientation="vertical"
+      android:padding="16dp"
+      android:visibility="visible"
+      android:gravity="center_horizontal"
+      android:layout_height="match_parent">
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_text"
+        android:hint="Search Near Place"
+        android:padding="16dp"
+        android:drawablePadding="16dp"
+        android:drawableLeft="@drawable/ic_location"
+        android:background="@android:drawable/editbox_background"
+        ></EditText>
+
+
+
+
+
+
+  </LinearLayout>
+
+
+
+  <androidx.cardview.widget.CardView
+      android:layout_width="match_parent"
+      android:layout_height="180dp"
+      android:layout_alignParentBottom="true"
+      >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text=" Your Nearest Location"
+          android:layout_marginTop="5dp"
+          android:textSize="15dp"
+          android:fontFamily="@font/baloo"
+          android:textColor="@color/grey_80"
+          android:padding="5dp"
+          ></TextView>
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="k- 68 vijay vihar ph-1 rohini sector -4 new delhi -110085"
+         android:layout_marginTop="2dp"
+          android:textColor="@color/grey_80"
+          android:padding="5dp"
+          android:id="@+id/address_txt"
+          ></TextView>
+
+
+    </LinearLayout>
+
+
+
+    <com.balysv.materialripple.MaterialRippleLayout
+      android:id="@+id/bt"
+      style="@style/RippleStyleWhite"
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      android:layout_gravity="bottom"
+
+      android:clickable="true"
+      android:layout_marginLeft="5dp"
+      android:layout_marginRight="5dp"
+      android:layout_marginBottom="10dp"
+      android:background="@color/colorAccent">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="CONTINUE"
+
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:textColor="@android:color/white" />
+  </com.balysv.materialripple.MaterialRippleLayout>
+  </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

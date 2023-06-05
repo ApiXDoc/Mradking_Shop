@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#fff"
+
+
+                />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Intro"
+                    android:padding="10dp"
+                    style="@style/headerText"
+                    >
+                </TextView>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#aaa"
+                >
+
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Every Big Bussiness start with three stages"
+                android:textStyle="bold"
+                android:padding="10dp"
+                ></TextView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#aaa"
+                    >
+
+                </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="* Bussiness Building Stage \n * Investment Stage \n * Earning Stage"
+                ></TextView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#aaa"
+                android:layout_marginTop="5dp"
+                >
+
+            </View>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                >
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#aaa"
+                    >
+
+                </View>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="* Business Bulding Stage"
+                    android:padding="10dp"
+                    android:textSize="15sp"
+                    style="@style/headerText"
+                    >
+                </TextView>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#aaa"
+                    >
+
+                </View>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="On This Stage You Just need Bussiness Partners to Build Your Busssiness(Min-10)"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    ></TextView>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#aaa"
+                    android:layout_marginTop="5dp"
+                    >
+
+                </View>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                >
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#aaa"
+                    >
+
+                </View>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*Investment Stage"
+                    android:padding="10dp"
+                    android:textSize="15sp"
+                    style="@style/headerText"
+                    >
+                </TextView>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#aaa"
+                    >
+
+                </View>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="When you Complete Your First stage then you need to invest small amount in your business (don't worry your investment is risk free if your business is not work you can get complete refund without asking any question)"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    ></TextView>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#aaa"
+                    android:layout_marginTop="5dp"
+                    >
+
+                </View>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                >
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#aaa"
+                    >
+
+                </View>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*Earning Stage"
+                    android:padding="10dp"
+                    android:textSize="15sp"
+                    style="@style/headerText"
+                    >
+                </TextView>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#aaa"
+                    >
+
+                </View>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="On this stage your business create passive income for you .your business gives 4 types of 6 level passive income"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    ></TextView>
+
+
+
+
+
+                <TableLayout
+                    android:id="@+id/tableLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:shrinkColumns="*"
+                    android:padding="10dp"
+                    android:stretchColumns="*">
+                    <TableRow
+                        android:id="@+id/tableRow4"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:gravity="center_horizontal">
+                        <TextView
+                            android:id="@+id/textView9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:typeface="serif"
+                            android:textSize="18dp"
+                            android:text="Earning Table"
+                            android:gravity="center"
+                            android:layout_span="6"></TextView>
+                    </TableRow>
+                    <TableRow
+                        android:id="@+id/tableRow1"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent">
+                        <TextView
+                            android:text="Level"
+                            android:textStyle="bold"
+                            ></TextView>
+                        <TextView
+                            android:text="Investment"
+                            android:textStyle="bold"
+                            ></TextView>
+                        <TextView
+
+                            android:text="Renewable"
+                            android:textStyle="bold"
+                            android:typeface="serif"></TextView>
+                        <TextView
+
+                            android:text="Payment"
+                            android:textStyle="bold"
+                            android:typeface="serif"></TextView>
+                        <TextView
+
+                            android:text="Sales"
+                            android:textStyle="bold"
+                            android:typeface="serif"></TextView>
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tableRow2"
+                        android:layout_width="match_parent">
+                        <TextView
+                            android:text="1"
+                            android:gravity="center_horizontal"></TextView>
+
+
+                        <TextView
+                            android:text="500"
+                            android:gravity="center_horizontal"></TextView>
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:text="500"
+                            android:gravity="center_horizontal"></TextView>
+
+                        <TextView
+                            android:layout_height="match_parent"
+                            android:gravity="center_horizontal"
+                            android:text="5">
+
+                        </TextView>
+                        <TextView
+                            android:text="5"
+                            android:gravity="center_horizontal"></TextView>
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_height="wrap_content"
+
+                        android:layout_width="match_parent">
+                        <TextView
+                            android:text="2"
+                            android:gravity="center_horizontal"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:text="200"
+                            android:id="@+id/textView2"
+                            android:gravity="center_horizontal"
+                            android:textStyle="bold"></TextView>
+                        <TextView
+                            android:text="200"
+                            android:gravity="center_horizontal"></TextView>
+                        <TextView
+                            android:text="10"
+                            android:id="@+id/textView4"
+                            android:gravity="center_horizontal"></TextView>
+                        <TextView
+                            android:text="5"
+                            android:id="@+id/textView5"
+                            android:gravity="center_horizontal"></TextView>
+
+                    </TableRow>
+
+
+
+
+                    <TableRow
+                        android:layout_height="wrap_content"
+
+                        android:layout_width="match_parent">
+                        <TextView
+                            android:text="3"
+                            android:gravity="center_horizontal"
+                            android:textStyle="bold"></TextView>
+                        <TextView
+                            android:text="100"
+                            android:gravity="center_horizontal"
+                            android:textStyle="bold"></TextView>
+                        <TextView
+                            android:text="100"
+                            android:gravity="center_horizontal"></TextView>
+                        <TextView
+                            android:text="30"
+
+                            android:gravity="center_horizontal"></TextView>
+                        <TextView
+                            android:text="5"
+
+                            android:gravity="center_horizontal"></TextView>
+
+                    </TableRow>
+
+
+
+
+
+                    <TableRow
+                        android:layout_height="wrap_content"
+
+                        android:layout_width="match_parent">
+
+                        <TextView
+                            android:text="4"
+                            android:gravity="center_horizontal"
+                            android:textStyle="bold"></TextView>
+                        <TextView
+                            android:text="50"
+                            android:gravity="center_horizontal"
+                            android:textStyle="bold"></TextView>
+                        <TextView
+                            android:text="50"
+                            android:gravity="center_horizontal"></TextView>
+                        <TextView
+                            android:text="10"
+                            android:gravity="center_horizontal"></TextView>
+                        <TextView
+                            android:text="5"
+                            android:gravity="center_horizontal"></TextView>
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_height="wrap_content"
+
+                        android:layout_width="match_parent">
+
+                        <TextView
+                            android:text="5"
+                            android:gravity="center_horizontal"
+                            android:textStyle="bold"></TextView>
+                        <TextView
+                            android:text="25"
+                            android:gravity="center_horizontal"
+                            android:textStyle="bold"></TextView>
+                        <TextView
+                            android:text="25"
+                            android:gravity="center_horizontal"></TextView>
+                        <TextView
+                            android:text="10"
+                            android:gravity="center_horizontal"></TextView>
+                        <TextView
+                            android:text="5"
+                            android:gravity="center_horizontal"></TextView>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_height="wrap_content"
+
+                        android:layout_width="match_parent">
+                        <TextView
+                            android:text="6"
+                            android:gravity="center_horizontal"
+                            android:textStyle="bold"></TextView>
+                        <TextView
+                            android:text="15"
+                            android:gravity="center_horizontal"
+                            android:textStyle="bold"></TextView>
+                        <TextView
+                            android:text="15"
+                            android:gravity="center_horizontal"></TextView>
+                        <TextView
+                            android:text="15"
+                            android:gravity="center_horizontal"></TextView>
+                        <TextView
+                            android:text="5"
+                            android:gravity="center_horizontal"></TextView>
+
+                    </TableRow>
+
+
+                </TableLayout>
+                
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#aaa"
+                    android:layout_marginTop="5dp"
+                    >
+
+                </View>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+</ScrollView>

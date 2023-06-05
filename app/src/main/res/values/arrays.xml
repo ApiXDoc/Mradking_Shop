@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="number_of_varition" >
+
+        <item>select your number varition</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="kirana_main_categorys" >
+
+        <item>kirana_product_grossery</item>
+        <item>kirana_home_hygience_product</item>
+        <item>kirana_beverages_product</item>
+        <item>kirana_persnoal_care_product</item>
+        <item>kirana_snacks_product</item>
+
+
+    </string-array>
+
+    ////////sub_cat/////
+    <string-array name="kirana_product_grossery">
+        <item>atta</item>
+        <item>rice</item>
+        <item>oil_ghee</item>
+        <item>masalas</item>
+        <item>salt</item>
+        <item>sugar</item>
+        <item>dal</item>
+        <item>dry_fruit</item>
+        <item>basan_sooji_daila</item>
+    </string-array>
+
+
+    <string-array name="kirana_home_hygience_product">
+
+        <item>detergents</item>
+        <item>cleners</item>
+        <item>dishwhashers</item>
+        <item>repellents</item>
+        <item>air_freshners</item>
+
+    </string-array>
+
+
+    <string-array name="kirana_beverages_product">
+
+        <item>hair_oil</item>
+        <item>shampoo</item>
+        <item>soaps</item>
+        <item>toothpastes</item>
+        <item>skins_care</item>
+        <item>baby_care</item>
+
+    </string-array>
+
+    <string-array name="kirana_persnoal_care_product">
+
+       <item>tea</item>
+        <item>coffee</item>
+        <item>heath_drink</item>
+        <item>juices</item>
+        <item>soft_drink</item>
+
+    </string-array>
+
+
+
+    <string-array name="kirana_snacks_product">
+
+        <item>biscuits</item>
+        <item>namkeens</item>
+        <item>nodles_pasta</item>
+        <item>chocolates</item>
+        <item>ketchups</item>
+        <item>chips</item>
+
+    </string-array>
+    <string-array name="kirana_product_grossery_atta">
+
+        <item>packed</item>
+        <item>Unpacked</item>
+
+    </string-array>
+    <string-array name="kirana_product_grossery_rice">
+
+        <item>packed</item>
+        <item>Unpacked</item>
+
+
+
+    </string-array>
+    <string-array name="kirana_product_grossery_oil">
+
+    <item>Ghee</item>
+    <item>Refind</item>
+     <item>Mustard Oil</item>
+    </string-array>
+
+
+    <string-array name="kirana_product_masalas">
+
+        <item>Powder</item>
+        <item>Ready</item>
+        <item>Unpacked</item>
+
+    </string-array>
+    <string-array name="kirana_home_hygience_product_detergents">
+        <item>detergents_powder</item>
+        <item>detergents_bar</item>
+        <item>detergents_liquid</item>
+    </string-array>
+
+    <string-array name="kirana_home_hygience_product_cleners">
+
+        <item>toilet_cleaner</item>
+        <item>finial</item>
+        <item>glass_cleaner</item>
+        <item>bathroom_cleaner</item>
+        <item>floor_cleaner</item>
+
+
+    </string-array>
+    <string-array name="kirana_home_hygience_product_dishwhashers">
+
+        <item>diswash_bar</item>
+        <item>diswash_zeal</item>
+
+    </string-array>
+    <string-array name="kirana_home_hygience_product_repellents">
+
+        <item>macher_repellent</item>
+        <item>flying_kit_killer</item>
+
+    </string-array>
+    <string-array name="kirana_home_hygience_product_air_freshners">
+
+        <item>room_fragnace</item>
+        <item>bathroom_fragnace</item>
+
+    </string-array>
+    <string-array name="kirana_product_masalas_ready">
+
+        <item>gram_massala</item>
+        <item>mixe_massala</item>
+        <item>chat_massala</item>
+        <item>sabji_massala</item>
+        <item>meat_massala</item>
+        <item>kichen_king_massala</item>
+        <item>chana_massala</item>
+
+    </string-array>
+    <string-array name="kirana_product_masalas_powder">
+        <item>lalmirch</item>
+        <item>dhaniya</item>
+        <item>haldi</item>
+        <item>hing</item>
+        <item>other</item>
+
+
+    </string-array>
+    <string-array name="kirana_product_masalas_unpacked">
+
+        <item>packed</item>
+        <item>Unpacked</item>
+
+    </string-array>
+
+
+</resources>

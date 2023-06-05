@@ -1,0 +1,2292 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="50dp">
+    /////////////
+
+    <RelativeLayout
+        android:id="@+id/home_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+
+        <ScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:visibility="visible">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.appbar.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:paddingBottom="20dp">
+
+
+                    <androidx.appcompat.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="#fff"
+                        app:navigationIcon="@drawable/drawer_icon_in_red"
+                        app:title="ShoppingZin"
+
+                        />
+
+                    <EditText
+                        android:id="@+id/search_act"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/main_home_search_background"
+                        android:drawableLeft="@android:drawable/ic_menu_search"
+
+                        android:hint="Search Your Product"
+                        android:iconifiedByDefault="false"
+                        android:imeOptions="actionSearch"
+                        android:inputType="text"
+                        android:padding="2dp"
+                        android:textColor="#000"
+
+                        android:textColorHint="#aaa" />
+
+                </com.google.android.material.appbar.AppBarLayout>
+
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/view_pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp" />
+
+                    <me.relex.circleindicator.CircleIndicator
+                        android:id="@+id/circle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/view_pager"
+                        android:layout_centerHorizontal="true"
+                        android:padding="16dp"
+                        app:ci_drawable="@drawable/circle_indicator_background" />
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/baloo"
+                    android:paddingLeft="20dp"
+                    android:text="Foodgrains and Oils"
+                    android:textColor="#000"
+                    android:textSize="22dp"></TextView>
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:alignmentMode="alignMargins"
+                    android:columnCount="3"
+                    android:columnOrderPreserved="false"
+                    android:rowCount="9">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="6dp"
+                        app:cardCornerRadius="4dp"
+                        app:cardElevation="4dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/aata"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#f9f0da"
+                            android:orientation="vertical"
+
+                            >
+
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="60dp"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="13dp"
+                                android:contentDescription=""
+                                android:scaleType="fitXY"
+
+                                android:src="@mipmap/atta_1" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="28dp"
+                                android:background="#c2172d"
+                                android:gravity="center"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:paddingBottom="4dp"
+                                android:text="Atta"
+                                android:textColor="#fff">
+
+
+                            </TextView>
+
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="6dp"
+                        android:background="@mipmap/rice"
+                        app:cardCornerRadius="4dp"
+                        app:cardElevation="4dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/rice"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#e9e9e9"
+                            android:orientation="vertical"
+
+                            >
+
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="60dp"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="13dp"
+                                android:contentDescription=""
+                                android:scaleType="fitXY"
+
+                                android:src="@mipmap/rice_1" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="28dp"
+                                android:background="#751e1d"
+                                android:gravity="center"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:paddingBottom="4dp"
+                                android:text="Rice"
+                                android:textColor="#fff">
+
+
+                            </TextView>
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="6dp"
+
+                        app:cardCornerRadius="4dp"
+                        app:cardElevation="4dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/oil"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#fff3db"
+                            android:orientation="vertical"
+
+                            >
+
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="60dp"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="13dp"
+                                android:contentDescription=""
+                                android:scaleType="fitXY"
+
+                                android:src="@mipmap/oil_1" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="28dp"
+                                android:background="#c1871b"
+                                android:gravity="center"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:paddingBottom="4dp"
+                                android:text="Oil and Ghee"
+                                android:textColor="#fff">
+
+
+                            </TextView>
+
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="6dp"
+
+                        app:cardCornerRadius="4dp"
+                        app:cardElevation="4dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/masalas"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#dbfff3"
+                            android:orientation="vertical"
+
+                            >
+
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="60dp"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="13dp"
+                                android:contentDescription=""
+                                android:scaleType="fitXY"
+
+                                android:src="@mipmap/mashale_1" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="28dp"
+                                android:background="#148359"
+                                android:gravity="center"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:paddingBottom="4dp"
+                                android:text="Masalas"
+                                android:textColor="#fff">
+
+
+                            </TextView>
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="6dp"
+
+                        app:cardCornerRadius="4dp"
+                        app:cardElevation="4dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/salt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffecdb"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="60dp"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="13dp"
+                                android:contentDescription=""
+                                android:scaleType="fitXY"
+                                android:src="@mipmap/salt_1" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="28dp"
+                                android:background="#ca6b0d"
+                                android:gravity="center"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:paddingBottom="4dp"
+                                android:text="Salt"
+                                android:textColor="#fff">
+
+
+                            </TextView>
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="6dp"
+
+                        app:cardCornerRadius="4dp"
+                        app:cardElevation="4dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/sugar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#f9ffdd"
+                            android:orientation="vertical"
+
+                            >
+
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="60dp"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="13dp"
+                                android:contentDescription=""
+                                android:scaleType="fitXY"
+
+                                android:src="@mipmap/sugar_1" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="28dp"
+                                android:background="#858d23"
+                                android:gravity="center"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:paddingBottom="4dp"
+                                android:text="Sugar"
+                                android:textColor="#fff">
+
+
+                            </TextView>
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="6dp"
+                        android:background="@mipmap/dal_1"
+                        app:cardCornerRadius="4dp"
+                        app:cardElevation="4dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/dal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#feeddb"
+                            android:orientation="vertical"
+
+                            >
+
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="57dp"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="13dp"
+                                android:contentDescription=""
+                                android:scaleType="fitXY"
+
+                                android:src="@mipmap/dal_1" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="28dp"
+                                android:background="#ce710f"
+                                android:gravity="center"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:paddingBottom="4dp"
+                                android:text="Dal"
+                                android:textColor="#fff">
+
+
+                            </TextView>
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="6dp"
+
+                        app:cardCornerRadius="4dp"
+                        app:cardElevation="4dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/dry_fruits"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffdedc"
+                            android:orientation="vertical"
+
+                            >
+
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="60dp"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="13dp"
+                                android:contentDescription=""
+                                android:scaleType="fitXY"
+
+                                android:src="@mipmap/dry_fruit_1" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="28dp"
+                                android:background="#6c443c"
+                                android:gravity="center"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:paddingBottom="4dp"
+                                android:text="Dry Fruits"
+                                android:textColor="#fff">
+
+
+                            </TextView>
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="6dp"
+
+                        app:cardCornerRadius="4dp"
+                        app:cardElevation="4dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/besan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#fff5db"
+                            android:orientation="vertical"
+
+                            >
+
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="60dp"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="13dp"
+                                android:contentDescription=""
+                                android:scaleType="fitXY"
+
+                                android:src="@mipmap/bashen_1" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="28dp"
+                                android:background="#c58d1a"
+                                android:gravity="center"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:paddingBottom="4dp"
+                                android:text="Besan,Sooji,Dallia"
+                                android:textColor="#fff">
+
+
+                            </TextView>
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </GridLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="270dp"
+                    android:layout_margin="10dp"
+
+
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <androidx.cardview.widget.CardView
+
+                            android:id="@+id/more_bt_1"
+                            android:layout_width="60dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginRight="15dp"
+
+                            android:layout_marginBottom="15dp"
+                            app:cardBackgroundColor="@color/colorAccent"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="10dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="More"
+                                    android:textColor="#fff"
+                                    android:textSize="14sp" />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:elevation="5dp"
+                                android:fontFamily="@font/baloo"
+                                android:padding="15dp"
+                                android:text="Top Grocery Seller"
+                                android:textColor="#000000"
+                                android:textSize="18dp"
+                                android:textStyle="bold"></TextView>
+
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/grocery"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:visibility="gone"></androidx.recyclerview.widget.RecyclerView>
+
+                            <FrameLayout
+                                android:id="@+id/container_grocery"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:visibility="visible"></FrameLayout>
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                /////////////////////////////////
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/baloo"
+                    android:paddingLeft="20dp"
+                    android:text="Home Hygiene and Care"
+                    android:textColor="#000"
+                    android:textSize="22dp"></TextView>
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:alignmentMode="alignMargins"
+                    android:columnCount="3"
+                    android:columnOrderPreserved="false"
+                    android:rowCount="9">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="6dp"
+                        app:cardCornerRadius="4dp"
+
+                        app:cardElevation="4dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/detergents"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#deeaff"
+                            android:orientation="vertical"
+
+
+                            >
+
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="60dp"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="13dp"
+                                android:contentDescription=""
+                                android:scaleType="fitXY"
+                                android:src="@mipmap/detergent_1" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="28dp"
+                                android:background="#2e62bc"
+                                android:gravity="center"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:paddingBottom="4dp"
+                                android:text="Detergents"
+                                android:textColor="#fff">
+
+
+                            </TextView>
+
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="6dp"
+                        android:background="@mipmap/rice"
+                        app:cardCornerRadius="4dp"
+                        app:cardElevation="4dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/cleaners"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#f1f1f1"
+                            android:orientation="vertical"
+
+
+                            >
+
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="60dp"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="13dp"
+                                android:contentDescription=""
+                                android:scaleType="fitXY"
+                                android:src="@mipmap/cleaners_1" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="28dp"
+                                android:background="#1b417e"
+                                android:gravity="center"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:paddingBottom="4dp"
+                                android:text="Cleaners"
+                                android:textColor="#fff">
+
+
+                            </TextView>
+
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="6dp"
+                        app:cardCornerRadius="4dp"
+
+                        app:cardElevation="4dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/dishwashers"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#eeffdb"
+                            android:orientation="vertical"
+
+                            >
+
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="60dp"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="13dp"
+                                android:contentDescription=""
+                                android:scaleType="fitXY"
+                                android:src="@mipmap/dishwaher_1" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="28dp"
+                                android:background="#2e8c2a"
+                                android:gravity="center"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:paddingBottom="4dp"
+                                android:text="Dishwashers"
+                                android:textColor="#fff">
+
+
+                            </TextView>
+
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="6dp"
+                        app:cardCornerRadius="4dp"
+
+                        app:cardElevation="4dp">
+
+                        <LinearLayout
+                            android:id="@+id/repellents"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#dcf4ff"
+                            android:orientation="vertical"
+
+                            >
+
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="60dp"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="13dp"
+                                android:contentDescription=""
+                                android:scaleType="fitXY"
+                                android:src="@mipmap/repellent_1" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="28dp"
+                                android:background="#237eaa"
+                                android:gravity="center"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:paddingBottom="4dp"
+                                android:text="Repellents"
+                                android:textColor="#fff">
+
+
+                            </TextView>
+
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="6dp"
+                        app:cardCornerRadius="4dp"
+
+                        app:cardElevation="4dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/air_fresheners"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#e0dafe"
+                            android:orientation="vertical"
+
+                            >
+
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="60dp"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="13dp"
+                                android:contentDescription=""
+                                android:scaleType="fitXY"
+                                android:src="@mipmap/air_freshner_1" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="28dp"
+                                android:background="#6a4fbf"
+                                android:gravity="center"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:paddingBottom="4dp"
+                                android:text="Air Fresheners"
+                                android:textColor="#fff">
+
+
+                            </TextView>
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="6dp"
+                        android:visibility="gone"
+
+                        app:cardCornerRadius="4dp"
+                        app:cardElevation="4dp">
+
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+
+                            android:layout_gravity="center"
+                            android:contentDescription=""
+                            android:scaleType="fitXY" />
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </GridLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="270dp"
+                    android:layout_margin="10dp"
+
+
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <androidx.cardview.widget.CardView
+
+                            android:id="@+id/more_bt_2"
+                            android:layout_width="60dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="15dp"
+                            app:cardBackgroundColor="@color/colorAccent"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="10dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="More"
+                                    android:textColor="#fff"
+                                    android:textSize="14sp" />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:elevation="5dp"
+                                android:fontFamily="@font/baloo"
+                                android:padding="15dp"
+                                android:text="Top Home Care Seller"
+                                android:textColor="#000000"
+                                android:textSize="18dp"
+                                android:textStyle="bold"></TextView>
+
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/home_hygiene_care"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:visibility="gone"></androidx.recyclerview.widget.RecyclerView>
+
+
+                            <FrameLayout
+                                android:id="@+id/container_home_hygiene_care"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:visibility="visible"></FrameLayout>
+
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                ////////////////////////////
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/baloo"
+                    android:paddingLeft="20dp"
+                    android:text="Personal Care"
+                    android:textColor="#000"
+                    android:textSize="22dp"></TextView>
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:alignmentMode="alignMargins"
+                    android:columnCount="3"
+                    android:columnOrderPreserved="false"
+                    android:rowCount="9">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="6dp"
+                        app:cardCornerRadius="4dp"
+
+                        app:cardElevation="4dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/hair_oil"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#fff8db"
+                            android:orientation="vertical"
+
+                            >
+
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="60dp"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="13dp"
+                                android:contentDescription=""
+                                android:scaleType="fitXY"
+                                android:src="@mipmap/hair_oil_1" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="28dp"
+                                android:background="#e4a72c"
+                                android:gravity="center"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:paddingBottom="4dp"
+                                android:text="Hair Oil"
+                                android:textColor="#fff">
+
+
+                            </TextView>
+
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="6dp"
+                        android:background="@mipmap/rice"
+                        app:cardCornerRadius="4dp"
+                        app:cardElevation="4dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/shampoo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#deeaff"
+                            android:orientation="vertical"
+
+                            >
+
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="60dp"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="13dp"
+                                android:contentDescription=""
+                                android:scaleType="fitXY"
+                                android:src="@mipmap/shampoo_1" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="28dp"
+                                android:background="#2f6ac6"
+                                android:gravity="center"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:paddingBottom="4dp"
+                                android:text="Shampoo"
+                                android:textColor="#fff">
+
+
+                            </TextView>
+
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="6dp"
+                        app:cardCornerRadius="4dp"
+
+                        app:cardElevation="4dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/shoaps"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffdce3"
+                            android:orientation="vertical"
+
+                            >
+
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="60dp"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="13dp"
+                                android:contentDescription=""
+                                android:scaleType="fitXY"
+                                android:src="@mipmap/soaps_1" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="28dp"
+                                android:background="#cb3124"
+                                android:gravity="center"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:paddingBottom="4dp"
+                                android:text="Shoaps"
+                                android:textColor="#fff">
+
+
+                            </TextView>
+
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="6dp"
+                        app:cardCornerRadius="4dp"
+
+                        app:cardElevation="4dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/toothpasters"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffdddc"
+                            android:orientation="vertical"
+
+                            >
+
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="60dp"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="13dp"
+                                android:contentDescription=""
+                                android:scaleType="fitXY"
+                                android:src="@mipmap/toothpaste_1" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="28dp"
+                                android:background="#a2373a"
+                                android:gravity="center"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:paddingBottom="4dp"
+                                android:text="Toothpastes"
+                                android:textColor="#fff">
+
+
+                            </TextView>
+
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="6dp"
+                        app:cardCornerRadius="4dp"
+
+                        app:cardElevation="4dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/skin_care"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#f1f1f1"
+                            android:orientation="vertical"
+
+                            >
+
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="60dp"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="13dp"
+                                android:contentDescription=""
+                                android:scaleType="fitXY"
+                                android:src="@mipmap/skincare" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="28dp"
+                                android:background="#173b72"
+                                android:gravity="center"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:paddingBottom="4dp"
+                                android:text="Skin Care"
+                                android:textColor="#fff">
+
+
+                            </TextView>
+
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="6dp"
+                        app:cardCornerRadius="4dp"
+                        app:cardElevation="4dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/baby_care"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffdded"
+                            android:orientation="vertical"
+
+                            >
+
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="60dp"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="13dp"
+                                android:contentDescription=""
+                                android:scaleType="fitXY"
+                                android:src="@mipmap/baby_care_1" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="28dp"
+                                android:background="#aa1555"
+                                android:gravity="center"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:paddingBottom="4dp"
+                                android:text="Baby Care"
+                                android:textColor="#fff">
+
+
+                            </TextView>
+
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                </GridLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="270dp"
+                    android:layout_margin="10dp"
+
+
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <androidx.cardview.widget.CardView
+
+                            android:id="@+id/more_bt_3"
+                            android:layout_width="60dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="15dp"
+                            app:cardBackgroundColor="@color/colorAccent"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="10dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="More"
+                                    android:textColor="#fff"
+                                    android:textSize="14sp" />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:elevation="5dp"
+                                android:fontFamily="@font/baloo"
+                                android:padding="15dp"
+                                android:text="Top Personal Care Seller"
+                                android:textColor="#000000"
+                                android:textSize="18dp"
+                                android:textStyle="bold"></TextView>
+
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/persnoal_care_list"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:visibility="gone"></androidx.recyclerview.widget.RecyclerView>
+
+
+                            <FrameLayout
+                                android:id="@+id/container_persnoal_care_list"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:visibility="visible"></FrameLayout>
+
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                /////////////////
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/baloo"
+                    android:paddingLeft="20dp"
+                    android:text="Beverages"
+                    android:textColor="#000"
+                    android:textSize="22dp"></TextView>
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:alignmentMode="alignMargins"
+                    android:columnCount="3"
+                    android:columnOrderPreserved="false"
+                    android:rowCount="9">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="6dp"
+                        app:cardCornerRadius="4dp"
+
+                        app:cardElevation="4dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/tea"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#e5ffd8"
+                            android:orientation="vertical"
+
+                            >
+
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="60dp"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="13dp"
+                                android:contentDescription=""
+                                android:scaleType="fitXY"
+                                android:src="@mipmap/tea_1" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="28dp"
+                                android:background="#3a813d"
+                                android:gravity="center"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:paddingBottom="4dp"
+                                android:text="Tea"
+                                android:textColor="#fff">
+
+
+                            </TextView>
+
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="6dp"
+                        android:background="@mipmap/rice"
+                        app:cardCornerRadius="4dp"
+                        app:cardElevation="4dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/coffee"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffdbcb"
+                            android:orientation="vertical"
+
+                            >
+
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="60dp"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="13dp"
+                                android:contentDescription=""
+                                android:scaleType="fitXY"
+                                android:src="@mipmap/coffee_1" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="28dp"
+                                android:background="#8f533d"
+                                android:gravity="center"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:paddingBottom="4dp"
+                                android:text="Coffee"
+                                android:textColor="#fff">
+
+
+                            </TextView>
+
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="6dp"
+                        app:cardCornerRadius="4dp"
+
+                        app:cardElevation="4dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/healthy_drinks"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#e5dbfe"
+                            android:orientation="vertical"
+
+                            >
+
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="60dp"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="13dp"
+                                android:contentDescription=""
+                                android:scaleType="fitXY"
+                                android:src="@mipmap/health_drink_1" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="28dp"
+                                android:background="#493aa3"
+                                android:gravity="center"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:paddingBottom="4dp"
+                                android:text="Health Drinks"
+                                android:textColor="#fff">
+
+
+                            </TextView>
+
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="6dp"
+                        app:cardCornerRadius="4dp"
+
+                        app:cardElevation="4dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/juices"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#fff0d9"
+                            android:orientation="vertical"
+
+                            >
+
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="60dp"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="13dp"
+                                android:contentDescription=""
+                                android:scaleType="fitXY"
+                                android:src="@mipmap/juices_1" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="28dp"
+                                android:background="#e3960e"
+                                android:gravity="center"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:paddingBottom="4dp"
+                                android:text="Juices"
+                                android:textColor="#fff">
+
+
+                            </TextView>
+
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="6dp"
+                        app:cardCornerRadius="4dp"
+
+                        app:cardElevation="4dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/soft_drink"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffded9"
+                            android:orientation="vertical"
+
+                            >
+
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="60dp"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="13dp"
+                                android:contentDescription=""
+                                android:scaleType="fitXY"
+                                android:src="@mipmap/soft_drink_1" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="28dp"
+                                android:background="#873535"
+                                android:gravity="center"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:paddingBottom="4dp"
+                                android:text="Soft Drink"
+                                android:textColor="#fff">
+
+
+                            </TextView>
+
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="6dp"
+                        android:visibility="gone"
+
+                        app:cardCornerRadius="4dp"
+                        app:cardElevation="4dp">
+
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+
+                            android:layout_gravity="center"
+                            android:contentDescription=""
+                            android:scaleType="fitXY" />
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </GridLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="270dp"
+                    android:layout_margin="10dp"
+
+
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <androidx.cardview.widget.CardView
+
+                            android:id="@+id/more_bt_4"
+                            android:layout_width="60dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="15dp"
+                            app:cardBackgroundColor="@color/colorAccent"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="10dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="More"
+                                    android:textColor="#fff"
+                                    android:textSize="14sp" />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:elevation="5dp"
+                                android:fontFamily="@font/baloo"
+                                android:padding="15dp"
+                                android:text="Top Beverage Seller"
+                                android:textColor="#000000"
+                                android:textSize="18dp"
+                                android:textStyle="bold"></TextView>
+
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/beverage_list"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:visibility="gone"
+                                android:layout_weight="1"></androidx.recyclerview.widget.RecyclerView>
+
+
+                            <FrameLayout
+                                android:id="@+id/container_beverage_list"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:visibility="visible"></FrameLayout>
+
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                ////////////////////////
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/baloo"
+                    android:paddingLeft="20dp"
+                    android:text="Snacks"
+                    android:textColor="#000"
+                    android:textSize="22dp"></TextView>
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:alignmentMode="alignMargins"
+                    android:columnCount="3"
+                    android:columnOrderPreserved="false"
+                    android:rowCount="9">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="6dp"
+                        app:cardCornerRadius="4dp"
+
+                        app:cardElevation="4dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/biscuits"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffd9e6"
+                            android:orientation="vertical"
+
+                            >
+
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="60dp"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="13dp"
+                                android:contentDescription=""
+                                android:scaleType="fitXY"
+                                android:src="@mipmap/biscuits_1" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="28dp"
+                                android:background="#af3a5f"
+                                android:gravity="center"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:paddingBottom="4dp"
+                                android:text="Biscuits"
+                                android:textColor="#fff">
+
+
+                            </TextView>
+
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="6dp"
+                        android:background="@mipmap/rice"
+                        app:cardCornerRadius="4dp"
+                        app:cardElevation="4dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/namkeen"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffdce0"
+                            android:orientation="vertical"
+
+                            >
+
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="60dp"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="13dp"
+                                android:contentDescription=""
+                                android:scaleType="fitXY"
+                                android:src="@mipmap/namkeen" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="28dp"
+                                android:background="#631a14"
+                                android:gravity="center"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:paddingBottom="4dp"
+                                android:text="Namkeen"
+                                android:textColor="#fff">
+
+
+                            </TextView>
+
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="6dp"
+                        app:cardCornerRadius="4dp"
+
+                        app:cardElevation="4dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/noodles"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#fffdd9"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="60dp"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="13dp"
+                                android:contentDescription=""
+                                android:scaleType="fitXY"
+                                android:src="@mipmap/noodles_1" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="28dp"
+                                android:background="#f4c81d"
+                                android:gravity="center"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:paddingBottom="4dp"
+                                android:text="Noodles and Pasta"
+                                android:textColor="#fff">
+
+
+                            </TextView>
+
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="6dp"
+                        app:cardCornerRadius="4dp"
+
+                        app:cardElevation="4dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/chocolate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffded9"
+                            android:orientation="vertical"
+
+                            >
+
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="60dp"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="13dp"
+                                android:contentDescription=""
+                                android:scaleType="fitXY"
+                                android:src="@mipmap/choclates" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="28dp"
+                                android:background="#883d4b"
+                                android:gravity="center"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:paddingBottom="4dp"
+                                android:text="Chocolates"
+                                android:textColor="#fff">
+
+
+                            </TextView>
+
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="6dp"
+                        app:cardCornerRadius="4dp"
+
+                        app:cardElevation="4dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/kethups"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffe7db"
+                            android:orientation="vertical"
+
+                            >
+
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="60dp"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="13dp"
+                                android:contentDescription=""
+                                android:scaleType="fitXY"
+                                android:src="@mipmap/ketchups_1" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="28dp"
+                                android:background="#e65014"
+                                android:gravity="center"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:paddingBottom="4dp"
+                                android:text="Ketchups"
+                                android:textColor="#fff">
+
+
+                            </TextView>
+
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="6dp"
+                        app:cardCornerRadius="4dp"
+
+                        app:cardElevation="4dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/chips"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffe0db"
+                            android:orientation="vertical"
+
+                            >
+
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="60dp"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="13dp"
+                                android:contentDescription=""
+                                android:scaleType="fitXY"
+                                android:src="@mipmap/chips_1" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="28dp"
+                                android:background="#cc4f37"
+                                android:gravity="center"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:paddingBottom="4dp"
+                                android:text="Chips"
+                                android:textColor="#fff">
+
+
+                            </TextView>
+
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                </GridLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <androidx.cardview.widget.CardView
+
+                            android:id="@+id/more_bt_5"
+                            android:layout_width="60dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginRight="15dp"
+
+                            android:layout_marginBottom="50dp"
+                            app:cardBackgroundColor="@color/colorAccent"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="10dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="More"
+                                    android:textColor="#fff"
+                                    android:textSize="14sp" />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="50dp"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:elevation="5dp"
+                                android:fontFamily="@font/baloo"
+                                android:padding="15dp"
+                                android:text="Top Snacks Seller"
+                                android:textColor="#000000"
+                                android:textSize="18dp"
+                                android:textStyle="bold"></TextView>
+
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/snack_list"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:visibility="gone"
+                                android:layout_weight="1"></androidx.recyclerview.widget.RecyclerView>
+
+                            <FrameLayout
+                                android:id="@+id/container_snack_list"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:visibility="visible"></FrameLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/cart_view_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="visible"
+
+        >
+
+        <TextView
+            android:id="@+id/no_item_in_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="7 Items"
+            android:textColor="#fff"
+            android:visibility="gone"></TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" | "
+            android:textColor="#fff"
+            android:visibility="gone"></TextView>
+
+
+        <TextView
+            android:id="@+id/total_home_amt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:paddingLeft="25dp"
+            android:text="Rs 0.00"
+            android:textColor="#fff"></TextView>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_shopping_cart"></ImageView>
+
+        <TextView
+            android:id="@+id/view_cart_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="25dp"
+            android:text="VIEW CART"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+
+            android:textColor="#fff"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item
+        android:id="@+id/navigation_1"
+        android:icon="@drawable/salies_icon"
+        android:title="Delivered" />
+
+    <item
+        android:id="@+id/navigation_2"
+        android:icon="@drawable/delivered_icon"
+        android:checked="true"
+        android:title="Request" />
+
+    <item
+        android:id="@+id/navigation_3"
+        android:icon="@drawable/transfer_icon"
+        android:checked="true"
+        android:title="Transfer" />
+
+</menu>

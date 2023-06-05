@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent">
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_text"
+        android:hint="Enter Your Address"
+        android:padding="16dp"
+        android:drawablePadding="16dp"
+        android:drawableLeft="@drawable/ic_location"
+        android:background="@android:drawable/editbox_background"
+        ></EditText>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_view1"
+        android:fontFamily="monospace"
+        android:padding="12dp"
+        android:layout_marginTop="32dp"
+
+        ></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_2"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:padding="12dp"
+
+        ></TextView>
+
+
+
+</LinearLayout>

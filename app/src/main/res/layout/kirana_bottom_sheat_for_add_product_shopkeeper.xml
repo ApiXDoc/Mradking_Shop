@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:scrollbars="vertical"
+        android:scrollingCache="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@mipmap/chips_1"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/product_image_btm"
+                    ></ImageView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:textSize="18dp"
+                    android:text="Product Name"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:id="@+id/product_name"
+                    ></TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:text="MRP:- RS 250"
+                        android:id="@+id/mrp_btm"
+                        ></TextView>
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#aaa"
+                ></View>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="0dp"
+                android:layout_margin="5dp"
+                >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    >
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:padding="15dp"
+                    android:hint="Product Name"
+                    android:id="@+id/product_name_et_btm"
+                    android:inputType="textPostalAddress"
+                    >
+
+                </EditText>
+                </com.google.android.material.textfield.TextInputLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1"
+                        >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:padding="15dp"
+                    android:hint="MRP"
+                    android:id="@+id/mrp_et_btm"
+                    android:inputType="number"
+                    >
+                </EditText>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1"
+                        >
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginEnd="25dp"
+                            android:padding="15dp"
+                            android:hint="Salling Price"
+                            android:inputType="number"
+                            android:id="@+id/salling_et_btm"
+                            >
+                        </EditText>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1"
+                        >
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginEnd="25dp"
+                            android:padding="15dp"
+                            android:hint="Weight"
+                            android:id="@+id/quantity"
+                            android:inputType="text"
+                            >
+                        </EditText>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1"
+                        >
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginEnd="25dp"
+                            android:padding="15dp"
+                            android:hint="Stock"
+                            android:inputType="number"
+                            android:id="@+id/stock_et_btm"
+                            >
+                        </EditText>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="5dp"
+                    >
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:padding="25dp"
+                        app:cardCornerRadius="5dp"
+                        android:layout_margin="5dp"
+                        android:layout_marginTop="10dp"
+                        >
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:orientation="horizontal"
+                            android:gravity="center_horizontal"
+                            android:layout_gravity="center"
+
+                            >
+
+
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Variation Yes"
+                                android:id="@+id/varition_yes"
+
+                                ></CheckBox>
+
+
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Variation No"
+                                android:layout_marginLeft="25dp"
+                                android:id="@+id/varition_no"
+
+                                ></CheckBox>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/variation_layout"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="5dp"
+                            android:layout_margin="5dp"
+                            >
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawSelectorOnTop="true"
+                            android:padding="10dp"
+                            android:entries="@array/number_of_varition"
+
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/varition_sppiner"
+                            ></Spinner>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:id="@+id/vartion_detail_1_lay"
+                            android:visibility="gone"
+
+                            >
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:layout_weight="1"
+                                >
+
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+
+                                android:hint="Weight"
+                                android:id="@+id/var_1_qt_et"
+                                android:layout_marginTop="20dp"
+                                android:inputType="text"
+                                android:layout_weight="1"
+                                >
+                            </EditText>
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:layout_weight="1"
+                                >
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+
+                                android:hint="Mrp"
+                                android:id="@+id/var_1_mrp_et"
+
+                                android:layout_marginTop="20dp"
+                                android:inputType="number"
+                                android:layout_weight="1"
+                                >
+                            </EditText></com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:layout_weight="1"
+                                >
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+
+                                android:hint="Selling Price"
+                                android:layout_marginTop="20dp"
+                                android:inputType="number"
+                                android:layout_weight="1"
+                                android:id="@+id/var_1_selling_et"
+
+                                >
+                            </EditText></com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:layout_weight="1"
+                                >
+
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+
+                                android:hint="Stock"
+                                android:layout_marginTop="20dp"
+                                android:inputType="number"
+                                android:layout_weight="1"
+                                android:id="@+id/var_1_stock_et"
+
+                                >
+                            </EditText>
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:id="@+id/vartion_detail_2_lay"
+
+                            android:visibility="gone"
+
+                            >
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:layout_weight="1"
+                                >
+
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+
+                                android:hint="Weight"
+                                android:layout_marginTop="20dp"
+                                android:inputType="text"
+                                android:layout_weight="1"
+                                android:id="@+id/var_2_qt_et"
+
+                                >
+                            </EditText>
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:layout_weight="1"
+                                >
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+
+                                android:hint="Mrp"
+                                android:layout_marginTop="20dp"
+                                android:inputType="number"
+                                android:layout_weight="1"
+                                android:id="@+id/var_2_mrp_et"
+
+                                >
+                            </EditText>
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:layout_weight="1"
+                                >
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+
+                                android:hint="Selling Price"
+                                android:layout_marginTop="20dp"
+                                android:inputType="number"
+                                android:layout_weight="1"
+                                android:id="@+id/var_2_selling_et"
+
+                                >
+                            </EditText>
+                            </com.google.android.material.textfield.TextInputLayout>
+
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:layout_weight="1"
+                                >
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+
+                                android:hint="Stock"
+                                android:layout_marginTop="20dp"
+                                android:inputType="number"
+                                android:layout_weight="1"
+                                android:id="@+id/var_2_stock_et"
+
+                                >
+                            </EditText></com.google.android.material.textfield.TextInputLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="gone"
+                            android:id="@+id/vartion_detail_3_lay"
+
+                            >
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:layout_weight="1"
+                                >
+
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+
+                                android:hint="Weight"
+                                android:layout_marginTop="20dp"
+                                android:inputType="text"
+                                android:layout_weight="1"
+                                android:id="@+id/var_3_qt_et"
+
+                                >
+                            </EditText>
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:layout_weight="1"
+                                >
+
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+
+                                android:hint="Mrp"
+                                android:layout_marginTop="20dp"
+                                android:inputType="number"
+                                android:layout_weight="1"
+                                android:id="@+id/var_3_mrp_et"
+
+                                >
+                            </EditText>
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:layout_weight="1"
+                                >
+
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+
+                                android:hint="Selling Price"
+                                android:layout_marginTop="20dp"
+                                android:inputType="number"
+                                android:layout_weight="1"
+                                android:id="@+id/var_3_selling_et"
+
+                                >
+                            </EditText>
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:layout_weight="1"
+                                >
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+
+                                android:hint="Stock"
+                                android:layout_marginTop="20dp"
+                                android:inputType="number"
+                                android:layout_weight="1"
+                                android:id="@+id/var_3_stock_et"
+
+                                >
+                            </EditText>
+
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="gone"
+                            android:id="@+id/vartion_detail_4_lay"
+
+                            >
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:layout_weight="1"
+                                >
+
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:hint="Weight"
+                                android:layout_marginTop="20dp"
+                                android:inputType="text"
+                                android:layout_weight="1"
+                                android:id="@+id/var_4_qt_et"
+
+                                >
+                            </EditText>
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:layout_weight="1"
+                                >
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:hint="Mrp"
+                                android:layout_marginTop="20dp"
+                                android:inputType="number"
+                                android:layout_weight="1"
+                                android:id="@+id/var_4_mrp_et"
+
+                                >
+                            </EditText></com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:layout_weight="1"
+                                >
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:hint="Selling Price"
+                                android:layout_marginTop="20dp"
+                                android:inputType="number"
+                                android:id="@+id/var_4_selling_et"
+
+                                android:layout_weight="1"
+                                >
+                            </EditText>
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:layout_weight="1"
+                                >
+
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:hint="Stock"
+                                android:layout_marginTop="20dp"
+                                android:inputType="number"
+                                android:layout_weight="1"
+                                android:id="@+id/var_4_stock_et"
+
+                                >
+                            </EditText>
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </LinearLayout>
+
+
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_horizontal"
+                    >
+                <androidx.cardview.widget.CardView
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    app:cardBackgroundColor="@color/colorAccent"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="10dp"
+                    android:id="@+id/ok_bt"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="Added"
+                            android:id="@+id/bt_text"
+                            android:textColor="#fff"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

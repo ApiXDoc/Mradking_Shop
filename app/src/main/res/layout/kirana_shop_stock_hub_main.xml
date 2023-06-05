@@ -1,0 +1,78 @@
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bgLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabTextColor="#000"
+                app:tabMode="scrollable"
+                android:paddingTop="8dp"
+                app:tabIndicatorColor="#F80909"
+                app:tabSelectedTextColor="#F80909"
+                app:tabIndicatorHeight="3dp"
+                android:visibility="visible"
+                app:tabGravity="fill"/>
+
+
+
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"  />
+
+        </LinearLayout>
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bottom_navigation"
+            android:layout_alignParentBottom="true"
+            app:menu="@menu/kirana_shop_stock_manu"
+
+            android:layout_gravity="bottom"
+            android:background="@android:color/white"
+            app:itemIconTint="@color/color_state"
+            app:itemTextAppearanceActive="@style/TextAppearance.AppCompat.Caption"
+            app:itemTextAppearanceInactive="@style/TextAppearance.AppCompat.Caption"
+            app:itemTextColor="@color/color_state"
+            app:labelVisibilityMode="labeled"
+            />
+
+
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/bottom_sheet_behavior" />
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

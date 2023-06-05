@@ -1,0 +1,92 @@
+<androidx.cardview.widget.CardView android:layout_width="150dp"
+    android:layout_height="180dp"
+    android:background="@drawable/edit_text"
+    android:elevation="3dp"
+    android:layout_marginLeft="4dp"
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="180dp"
+            android:scaleType="fitXY"
+            android:id="@+id/product_img"
+            android:src="@mipmap/men_wear"></ImageView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_overlay"
+            android:layout_alignParentBottom="true"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Product name"
+                android:gravity="center_horizontal"
+                android:textColor="#ffffff"
+                android:id="@+id/product_name"
+                android:singleLine="true"
+                android:textStyle="bold"
+
+                ></TextView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:layout_width="42dp"
+                        android:layout_height="2dp"
+                        android:layout_centerInParent="true"
+                        android:background="@android:color/holo_red_dark" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="250"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        android:id="@+id/marketing_price"
+                        ></TextView>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="250"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:id="@+id/salling_price"
+                    android:layout_marginLeft="5dp"
+                    ></TextView>
+
+            </LinearLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

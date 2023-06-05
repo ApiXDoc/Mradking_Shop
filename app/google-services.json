@@ -1,0 +1,196 @@
+{
+  "project_info": {
+    "project_number": "604427348722",
+    "firebase_url": "https://mradking-shop.firebaseio.com",
+    "project_id": "mradking-shop",
+    "storage_bucket": "mradking-shop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:604427348722:android:e89fc28d16fd9f03297e6b",
+        "android_client_info": {
+          "package_name": "com.mradking.admin_panel_for_mradking_shop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "604427348722-7ieokgmo78e1bktliuilepd3rils83ds.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mradking.admin_panel_for_mradking_shop",
+            "certificate_hash": "3443550ad4c7f3454e632ed9f0dfd1f603f8d3f2"
+          }
+        },
+        {
+          "client_id": "604427348722-9d0ffg3nfj897kb6olk3sm1roeghif55.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmpb9phvEYWAsDsYzwXNTTe3B0ljVe0-Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "604427348722-9d0ffg3nfj897kb6olk3sm1roeghif55.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:604427348722:android:4b87126322bbca97297e6b",
+        "android_client_info": {
+          "package_name": "com.mradking.mradking_hr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "604427348722-1kl3e9n5ncn3rbg9tj029s40ac47dgd0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mradking.mradking_hr",
+            "certificate_hash": "3443550ad4c7f3454e632ed9f0dfd1f603f8d3f2"
+          }
+        },
+        {
+          "client_id": "604427348722-9d0ffg3nfj897kb6olk3sm1roeghif55.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmpb9phvEYWAsDsYzwXNTTe3B0ljVe0-Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "604427348722-9d0ffg3nfj897kb6olk3sm1roeghif55.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:604427348722:android:502417ceafa81933297e6b",
+        "android_client_info": {
+          "package_name": "com.mradking.mradking_payment_manger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "604427348722-kl6triq97thi41k94jji2n9tftt7ii10.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mradking.mradking_payment_manger",
+            "certificate_hash": "3443550ad4c7f3454e632ed9f0dfd1f603f8d3f2"
+          }
+        },
+        {
+          "client_id": "604427348722-9d0ffg3nfj897kb6olk3sm1roeghif55.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmpb9phvEYWAsDsYzwXNTTe3B0ljVe0-Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "604427348722-9d0ffg3nfj897kb6olk3sm1roeghif55.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:604427348722:android:505ad73663a61600297e6b",
+        "android_client_info": {
+          "package_name": "com.mradking.mradking_stock_manger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "604427348722-ucttrq3c936vf0sl08mpe8oe92vh97bt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mradking.mradking_stock_manger",
+            "certificate_hash": "3443550ad4c7f3454e632ed9f0dfd1f603f8d3f2"
+          }
+        },
+        {
+          "client_id": "604427348722-9d0ffg3nfj897kb6olk3sm1roeghif55.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmpb9phvEYWAsDsYzwXNTTe3B0ljVe0-Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "604427348722-9d0ffg3nfj897kb6olk3sm1roeghif55.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:604427348722:android:a2a4657c50eed4db297e6b",
+        "android_client_info": {
+          "package_name": "com.mradking.mradkingshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "604427348722-rkvn43hqqrohjo76itcn4o9kkmh1o0bo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mradking.mradkingshop",
+            "certificate_hash": "3443550ad4c7f3454e632ed9f0dfd1f603f8d3f2"
+          }
+        },
+        {
+          "client_id": "604427348722-9d0ffg3nfj897kb6olk3sm1roeghif55.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmpb9phvEYWAsDsYzwXNTTe3B0ljVe0-Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "604427348722-9d0ffg3nfj897kb6olk3sm1roeghif55.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

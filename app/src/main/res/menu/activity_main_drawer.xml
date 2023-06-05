@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/category_memu"
+            android:title="Shop By Catigory" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/order_list_memu"
+            android:title="My Orders" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/cart_menu"
+            android:title="My Cart" />
+        <item
+            android:id="@+id/nav_tools"
+            android:icon="@drawable/wiselist_menu"
+            android:title="My Wish List" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/account_memu"
+                android:title="My Account" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/busniess_partner_memu"
+                android:title="Be The Bussniess Partner" />
+        </menu>
+    </item>
+
+</menu>

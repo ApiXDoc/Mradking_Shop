@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_1"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/navigation_2"
+        android:icon="@drawable/delivered_icon"
+        android:title="MonthList" />
+
+    <item
+        android:id="@+id/navigation_3"
+        android:icon="@drawable/shopping_basket"
+        android:checked="true"
+        android:title="Orders" />
+
+    <item
+        android:id="@+id/navigation_4"
+        android:icon="@drawable/ic_work"
+        android:checked="true"
+        android:title="Bussiness" />
+    <item
+        android:id="@+id/navigation_5"
+        android:icon="@drawable/ic_person"
+        android:title="Account" />
+
+</menu>
